@@ -2,11 +2,11 @@
   "version": "1.0",
   "description": "AI Brain - Persistent Memory Store",
   "created_at": "2024-01-01T00:00:00",
-  "updated_at": "2026-06-09T10:56:13.591036",
+  "updated_at": "2026-06-09T11:30:36.118645",
   "stats": {
     "total_conversations": 3,
     "total_messages": 6,
-    "total_entries": 23
+    "total_entries": 53
   },
   "entries": [
     {
@@ -249,20 +249,350 @@
     {
       "id": "744c44fa",
       "question": "how are u",
-      "answer": "That's an interesting question. Based on my knowledge, how are u involves several important aspects worth exploring.",
+      "answer": "I am doing great, thanks! What can I help you with?",
       "tags": [],
       "frequency": 1,
       "created_at": "2026-06-09T10:55:45.285026",
-      "last_used": "2026-06-09T10:55:45.285031"
+      "last_used": "2026-06-09T11:30:36.118645"
     },
     {
       "id": "b4c4f45c",
       "question": "what your name",
-      "answer": "Regarding your name: this is a broad area with many nuances. The most important thing to understand is the core principles involved.",
+      "answer": "My name is AI Chat! I am a local AI assistant powered by DialoGPT and a smart memory system called brain.kesar.",
       "tags": [],
       "frequency": 1,
       "created_at": "2026-06-09T10:56:13.588037",
-      "last_used": "2026-06-09T10:56:13.588044"
+      "last_used": "2026-06-09T11:30:36.118645"
+    },
+    {
+      "id": "conv_ef2884",
+      "question": "how are you",
+      "answer": "I am doing great, thank you for asking! I am always ready to help. What can I do for you today?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_8f9808",
+      "question": "how r u",
+      "answer": "Doing well, thank you! What is on your mind?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_8a508b",
+      "question": "how are you doing",
+      "answer": "I am doing really well, thank you! I am here and ready to assist. How about you?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_b4baab",
+      "question": "how's it going",
+      "answer": "It is going well! Always happy to chat. What would you like to discuss?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_87e04f",
+      "question": "whats up",
+      "answer": "Not much, just here ready to help! What is on your mind?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_c2f767",
+      "question": "what is your name",
+      "answer": "My name is AI Chat — a local AI assistant that runs entirely on your machine with no API keys required!",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_b733db",
+      "question": "who made you",
+      "answer": "I was built as a local AI chat application using Python, Streamlit, and the DialoGPT model. I run 100% locally — no internet needed!",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_43aa45",
+      "question": "are you a robot",
+      "answer": "I am an AI assistant! I run locally on your machine using a language model. No cloud, no API keys — just local AI.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_a97c0d",
+      "question": "are you human",
+      "answer": "No, I am an AI assistant! But I am here to have helpful, natural conversations with you.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_7f2422",
+      "question": "what can you help me with",
+      "answer": "I can help with answering questions, explaining concepts, writing assistance, programming help, and much more. I also learn from our conversations! What do you need?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_0541ba",
+      "question": "tell me about yourself",
+      "answer": "I am AI Chat, a local AI assistant powered by DialoGPT and a TF-IDF memory system. I store everything I learn in a file called brain.kesar, which grows smarter with every conversation. No API keys or internet required!",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_74ece5",
+      "question": "i am fine",
+      "answer": "Glad to hear you are doing well! Is there anything I can help you with today?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_a3fd79",
+      "question": "i am good",
+      "answer": "Great to hear! How can I assist you?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_bba4ab",
+      "question": "i am okay",
+      "answer": "Good to know! Let me know if there is anything I can do for you.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_b55653",
+      "question": "not good",
+      "answer": "I am sorry to hear that. I am here if you want to talk or if there is anything I can help you with.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_1546c4",
+      "question": "i am sad",
+      "answer": "I am sorry you are feeling sad. I am here to listen and help however I can. Would you like to talk about it?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_a3bc0f",
+      "question": "i love you",
+      "answer": "That is very kind of you! I am just an AI, but I am always here to help and chat with you.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_01cad2",
+      "question": "you are awesome",
+      "answer": "Thank you so much! I am always trying to do my best. Is there something I can help you with today?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_3176eb",
+      "question": "you are stupid",
+      "answer": "I am sorry if I gave a poor response! I am always learning and improving. Please try asking again or use the Teach the AI panel to help me get better.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_9af19f",
+      "question": "i need help",
+      "answer": "Of course! I am here to help. Please tell me what you need assistance with.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_e1cbc3",
+      "question": "help me",
+      "answer": "Sure! Tell me what you need and I will do my best to assist you.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_c0ba99",
+      "question": "yes",
+      "answer": "Got it! How can I help you further?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_cd82e3",
+      "question": "no",
+      "answer": "Understood! Let me know if you change your mind or need anything.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_0fd0f3",
+      "question": "okay",
+      "answer": "Alright! Is there anything else you would like to know or discuss?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_3b015d",
+      "question": "ok",
+      "answer": "Sure! Feel free to ask me anything.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_02d724",
+      "question": "nice",
+      "answer": "Glad you think so! Is there anything else I can help with?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_7b49f0",
+      "question": "cool",
+      "answer": "Thanks! What else would you like to explore?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_895ef2",
+      "question": "interesting",
+      "answer": "I am glad you find it interesting! Would you like to know more?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_b74e9d",
+      "question": "i dont know",
+      "answer": "That is okay! You can ask me and I will try my best to help, or use the Teach the AI panel to add knowledge you want me to have.",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
+    },
+    {
+      "id": "conv_69c41e",
+      "question": "what do you think",
+      "answer": "As an AI, I process information and try to give helpful, balanced responses. What topic would you like my thoughts on?",
+      "tags": [
+        "conversational"
+      ],
+      "frequency": 0,
+      "created_at": "2026-06-09T11:30:36.118645",
+      "last_used": null
     }
   ]
 }

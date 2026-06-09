@@ -259,18 +259,24 @@ with st.sidebar:
         for sess in sessions[:20]:
             is_active = sess["id"] == st.session_state.session_id
             title = sess.get("title", "New Chat")
-            if len(title) > 28:
-                title = title[:28] + "…"
-            label = f"▶  {title}" if is_active else f"   {title}"
-            msg_count = sess.get("message_count", 0)
+            if len(title) > 22:
+                title = title[:22] + "…"
+            active_dot = "🟢 " if is_active else "💬 "
 
-            c1, c2 = st.columns([5, 1])
+            c1, c2, c3 = st.columns([1, 5, 1])
             with c1:
-                if st.button(label, key=f"s_{sess['id']}", use_container_width=True):
+                if st.button("📂", key=f"o_{sess['id']}", help="Open this chat"):
                     _load_session(sess["id"])
                     st.rerun()
             with c2:
-                if st.button("✕", key=f"d_{sess['id']}", help="Delete chat"):
+                display = f"**{title}**" if is_active else title
+                st.markdown(
+                    f"<div style='padding:6px 0 0;color:#ececf1;font-size:0.83rem;'>"
+                    f"{active_dot}{display}</div>",
+                    unsafe_allow_html=True,
+                )
+            with c3:
+                if st.button("🗑", key=f"d_{sess['id']}", help="Delete this chat"):
                     memory.delete_session(sess["id"])
                     if st.session_state.session_id == sess["id"]:
                         st.session_state.session_id = None
@@ -388,29 +394,27 @@ if user_input and user_input.strip():
             # 1. Semantic search in brain
             similar = search.search(text, top_k=3)
 
-            high_match = similar and similar[0]["similarity"] >= 0.82
-            partial_match = similar and similar[0]["similarity"] >= 0.45
+            high_match   = similar and similar[0]["similarity"] >= 0.55
+            medium_match = similar and similar[0]["similarity"] >= 0.35
 
             if high_match:
-                # High-confidence brain answer
-                brain_answer = similar[0]["entry"]["answer"]
-                response = model.generate_with_context(
-                    text,
-                    brain_context=brain_answer,
-                    history=st.session_state.messages[:-1],
-                )
+                # Brain answer is authoritative — return it directly (clean, curated)
+                response = similar[0]["entry"]["answer"]
             else:
-                # Generate with model
-                response = model.generate(
+                # Generate with model, then quality-check
+                raw = model.generate(
                     text,
                     history=st.session_state.messages[:-1],
                 )
 
-                # Augment with partial brain match if model gave thin response
-                if partial_match and len(response.strip()) < 80:
-                    context_note = similar[0]["entry"]["answer"]
-                    if context_note.lower() not in response.lower():
-                        response = response + "\n\n" + context_note if response.strip() else context_note
+                if model.is_quality(raw):
+                    response = raw
+                elif medium_match:
+                    # Neural output is bad — fall back to partial brain match
+                    response = similar[0]["entry"]["answer"]
+                else:
+                    # Neural output is bad, no brain match — use clean template
+                    response = model.safe_template(text)
 
             # Final safety net
             if not response or not response.strip():

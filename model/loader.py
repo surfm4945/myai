@@ -133,20 +133,47 @@ class ModelLoader:
         else:
             return self._generate_template(user_input, history)
 
+    def is_quality(self, text: str) -> bool:
+        """Return True if a generated response is clean enough to show."""
+        if not text or len(text.strip()) < 15:
+            return False
+
+        t = text.lower()
+
+        # Reddit / internet slang markers DialoGPT loves to emit
+        reddit_markers = [
+            "lol", "lmao", "xd", "rofl", "haha", "hehe",
+            "op ", "cakeday", "/r/", "upvote", "downvote",
+            "edit:", "formatting", "jk", ":p", ":)", ";)",
+            "omg", "smh", "tbh", "ngl", "imo", "idk",
+        ]
+        hits = sum(1 for m in reddit_markers if m in t)
+        if hits >= 2:
+            return False
+
+        # Excess punctuation (excited/spammy)
+        if text.count("!") > 3 or text.count("?") > 3:
+            return False
+
+        # Contains URLs
+        if "http" in t or "www." in t:
+            return False
+
+        # Very repetitive (e.g., "haha haha haha")
+        words = t.split()
+        if len(words) > 3 and len(set(words)) / len(words) < 0.5:
+            return False
+
+        return True
+
+    def safe_template(self, user_input: str) -> str:
+        """Return a clean template response (never neural)."""
+        return self._generate_template(user_input)
+
     def generate_with_context(self, user_input: str, brain_context: str,
                                history: Optional[List[Dict]] = None) -> str:
-        """Generate a response, enriched by brain context."""
-        if not self._loaded:
-            return brain_context
-
-        if self._use_torch and self.model is not None:
-            neural = self._generate_neural(user_input, history)
-            # If neural response seems weak, prefer brain context
-            if len(neural.strip()) < 20 or neural.strip() in {"", ".", "..."}:
-                return brain_context
-            return neural
-        else:
-            return brain_context
+        """Return brain_context directly — it's curated and always clean."""
+        return brain_context
 
     # ── Neural generation ──────────────────────────────────────────────────────
 
