@@ -1,0 +1,268 @@
+{
+  "version": "1.0",
+  "description": "AI Brain - Persistent Memory Store",
+  "created_at": "2024-01-01T00:00:00",
+  "updated_at": "2026-06-09T10:56:13.591036",
+  "stats": {
+    "total_conversations": 3,
+    "total_messages": 6,
+    "total_entries": 23
+  },
+  "entries": [
+    {
+      "id": "init_001",
+      "question": "hello",
+      "answer": "Hello! I'm your AI assistant powered by local AI — no API keys required. How can I help you today?",
+      "tags": [
+        "greeting"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_002",
+      "question": "hi",
+      "answer": "Hi there! Great to chat with you. What's on your mind?",
+      "tags": [
+        "greeting"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_003",
+      "question": "hey",
+      "answer": "Hey! How's it going? What can I help you with?",
+      "tags": [
+        "greeting"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_004",
+      "question": "who are you",
+      "answer": "I'm an AI assistant that runs completely locally on your machine — no internet connection or API keys required! I use a local language model for conversation and a FAISS-based memory system to learn from our interactions. My knowledge is stored in a brain.kesar file that grows over time.",
+      "tags": [
+        "about"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_005",
+      "question": "what can you do",
+      "answer": "I can: answer questions, have intelligent conversations, help with writing and explanations, discuss programming and technology, and learn from our conversations. My knowledge grows over time using the brain.kesar memory system. You can also teach me custom knowledge using the sidebar panel!",
+      "tags": [
+        "capabilities"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_006",
+      "question": "how do you work",
+      "answer": "I use a local language model (DialoGPT when available) for generating responses, combined with a TF-IDF and semantic search system for memory-enhanced retrieval. All data is stored locally in brain.kesar and session files — nothing leaves your machine.",
+      "tags": [
+        "technical"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_007",
+      "question": "what is artificial intelligence",
+      "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems. It encompasses: Machine Learning (systems that learn from data), Natural Language Processing (understanding human language), Computer Vision (interpreting images/video), and Robotics. AI can be narrow (specialized) or general (human-like). Modern AI is powered by neural networks and large language models.",
+      "tags": [
+        "education",
+        "ai"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_008",
+      "question": "what is machine learning",
+      "answer": "Machine Learning (ML) is a subset of AI where systems learn from data without being explicitly programmed. Key types: Supervised Learning (labeled data), Unsupervised Learning (finds patterns), Reinforcement Learning (reward-based). Applications include image recognition, recommendation systems, fraud detection, and natural language processing.",
+      "tags": [
+        "education",
+        "ml"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_009",
+      "question": "what is python",
+      "answer": "Python is a high-level, interpreted programming language created by Guido van Rossum in 1991. Key features: readable syntax, dynamic typing, extensive libraries (NumPy, Pandas, TensorFlow, Django), and a huge community. Used for: web development, data science, AI/ML, automation, scripting, and scientific computing. It's the #1 language for data science and AI.",
+      "tags": [
+        "programming",
+        "python"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_010",
+      "question": "what is deep learning",
+      "answer": "Deep Learning is a subset of Machine Learning using neural networks with many layers (deep networks). It excels at: image recognition, speech recognition, NLP, and game playing. Architectures include CNNs (images), RNNs/LSTMs (sequences), and Transformers (text). It requires large datasets and significant compute power but achieves state-of-the-art results.",
+      "tags": [
+        "education",
+        "dl"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_011",
+      "question": "explain neural networks",
+      "answer": "Neural networks are computing systems inspired by biological brains. They consist of: Input layer (receives data), Hidden layers (process features), Output layer (produces results). Neurons connect via weights, adjusted during training using backpropagation. They can learn complex patterns and are the foundation of modern AI, including image recognition, language models, and autonomous systems.",
+      "tags": [
+        "education",
+        "nn"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_012",
+      "question": "what is nlp",
+      "answer": "Natural Language Processing (NLP) is a branch of AI that enables computers to understand, interpret, and generate human language. Applications: chatbots, machine translation, sentiment analysis, text summarization, question answering, and speech recognition. Modern NLP is dominated by Transformer models like BERT, GPT, and T5.",
+      "tags": [
+        "education",
+        "nlp"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_013",
+      "question": "what is a large language model",
+      "answer": "A Large Language Model (LLM) is a type of AI trained on massive text datasets to understand and generate human language. Examples: GPT-4, Claude, LLaMA, Gemini. They use the Transformer architecture and can perform: text generation, translation, summarization, coding, reasoning, and Q&A. LLMs work by predicting the next token in a sequence based on learned patterns.",
+      "tags": [
+        "education",
+        "llm"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_014",
+      "question": "how to learn programming",
+      "answer": "To learn programming effectively: 1) Pick one language (Python is great for beginners), 2) Learn fundamentals (variables, loops, functions, data structures), 3) Build small projects (calculator, to-do app), 4) Read others' code on GitHub, 5) Practice daily — even 30 minutes helps, 6) Use resources like Codecademy, freeCodeCamp, or CS50, 7) Join communities (Stack Overflow, Reddit r/learnprogramming), 8) Build things you care about.",
+      "tags": [
+        "programming",
+        "learning"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_015",
+      "question": "what is the meaning of life",
+      "answer": "That's one of philosophy's greatest questions! Different perspectives: Philosophical — existentialists like Sartre say we create our own meaning; Scientific — from biology, it's survival and reproduction; Religious — varies by faith but often involves connection to the divine; Humanistic — meaning comes from relationships, growth, and contribution to others. Albert Camus suggested embracing the absurdity and finding personal meaning despite uncertainty. What resonates with you?",
+      "tags": [
+        "philosophy"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_016",
+      "question": "tell me a joke",
+      "answer": "Why do programmers prefer dark mode? Because light attracts bugs! 😄 Here's another: Why did the AI go to therapy? It had too many layers of issues. Want to hear more?",
+      "tags": [
+        "humor"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_017",
+      "question": "what is the internet",
+      "answer": "The Internet is a global network of billions of interconnected computers communicating via standardized protocols (TCP/IP). It enables: World Wide Web (websites), email, streaming, social media, cloud computing, and IoT. Originally ARPANET (1969), it became public in 1991 with the WWW. Today it carries ~5 exabytes of data daily and connects ~5.4 billion people.",
+      "tags": [
+        "technology"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_018",
+      "question": "goodbye",
+      "answer": "Goodbye! It was great chatting with you. Our conversation has been saved and I'll remember what we discussed. Come back anytime!",
+      "tags": [
+        "farewell"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_019",
+      "question": "thank you",
+      "answer": "You're very welcome! I'm glad I could help. Is there anything else you'd like to know or discuss?",
+      "tags": [
+        "courtesy"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "init_020",
+      "question": "what time is it",
+      "answer": "I don't have access to real-time clock information, but you can check the time on your device. Is there something time-related I can help you with, like time zone conversions or scheduling advice?",
+      "tags": [
+        "general"
+      ],
+      "frequency": 0,
+      "created_at": "2024-01-01T00:00:00",
+      "last_used": null
+    },
+    {
+      "id": "f48d0ba9",
+      "question": "hello how are u",
+      "answer": "Hello! I'm your AI assistant powered by local AI — no API keys required. How can I help you today?",
+      "tags": [],
+      "frequency": 1,
+      "created_at": "2026-06-09T10:55:31.769763",
+      "last_used": "2026-06-09T10:55:31.769773"
+    },
+    {
+      "id": "744c44fa",
+      "question": "how are u",
+      "answer": "That's an interesting question. Based on my knowledge, how are u involves several important aspects worth exploring.",
+      "tags": [],
+      "frequency": 1,
+      "created_at": "2026-06-09T10:55:45.285026",
+      "last_used": "2026-06-09T10:55:45.285031"
+    },
+    {
+      "id": "b4c4f45c",
+      "question": "what your name",
+      "answer": "Regarding your name: this is a broad area with many nuances. The most important thing to understand is the core principles involved.",
+      "tags": [],
+      "frequency": 1,
+      "created_at": "2026-06-09T10:56:13.588037",
+      "last_used": "2026-06-09T10:56:13.588044"
+    }
+  ]
+}

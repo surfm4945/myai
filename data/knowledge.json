@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "description": "General knowledge base for AI training",
+  "topics": [
+    {
+      "topic": "Programming Languages",
+      "entries": [
+        {"q": "what is javascript", "a": "JavaScript is a lightweight, interpreted language primarily used for web development. It runs in browsers and Node.js on the server. Key features: dynamic typing, prototype-based OOP, async/await, closures, and a massive npm ecosystem."},
+        {"q": "what is rust", "a": "Rust is a systems programming language focused on safety, speed, and concurrency. It prevents memory bugs at compile time using its ownership system, has no garbage collector, and competes with C/C++ in performance."},
+        {"q": "what is go", "a": "Go (Golang) is a statically typed, compiled language designed by Google. Known for: simplicity, fast compilation, built-in concurrency (goroutines), and strong standard library. Great for web servers and microservices."},
+        {"q": "what is java", "a": "Java is an object-oriented, platform-independent language using the JVM. 'Write once, run anywhere' philosophy. Widely used in enterprise applications, Android development, and large-scale systems. Known for strong typing and extensive ecosystem."}
+      ]
+    },
+    {
+      "topic": "Computer Science",
+      "entries": [
+        {"q": "what is an algorithm", "a": "An algorithm is a step-by-step procedure for solving a problem or accomplishing a task. Algorithms are analyzed by time complexity (how long they take) and space complexity (memory used). Common algorithms: sorting (quicksort, mergesort), searching (binary search), graph traversal (BFS, DFS)."},
+        {"q": "what is a database", "a": "A database is an organized collection of structured data. Types: Relational (SQL — MySQL, PostgreSQL, SQLite), NoSQL (MongoDB, Redis, Cassandra), NewSQL (CockroachDB). Key concepts: ACID properties, indexes, transactions, joins, and normalization."},
+        {"q": "what is an api", "a": "An API (Application Programming Interface) is a set of rules that allows different software to communicate. Types: REST, GraphQL, gRPC, WebSocket. APIs enable: third-party integrations, microservices communication, and platform extensibility. REST APIs use HTTP methods: GET, POST, PUT, DELETE."},
+        {"q": "what is cloud computing", "a": "Cloud computing delivers computing services (servers, storage, databases, networking, software) over the internet. Major providers: AWS, Azure, Google Cloud. Models: IaaS (infrastructure), PaaS (platform), SaaS (software). Benefits: scalability, cost efficiency, global availability, and managed maintenance."}
+      ]
+    },
+    {
+      "topic": "Science",
+      "entries": [
+        {"q": "what is quantum computing", "a": "Quantum computing uses quantum mechanical phenomena (superposition, entanglement) to perform computations. Qubits can be 0 AND 1 simultaneously. This enables exponentially faster solutions for specific problems: cryptography, drug discovery, optimization, and simulation. Current quantum computers have ~100-1000 qubits but are still experimental."},
+        {"q": "what is dna", "a": "DNA (Deoxyribonucleic Acid) is the molecule that carries genetic information in all living organisms. It has a double helix structure with four bases: Adenine, Thymine, Guanine, Cytosine. Genes are sequences of DNA that encode proteins. The human genome has ~3 billion base pairs and ~20,000 genes."},
+        {"q": "what is climate change", "a": "Climate change refers to long-term shifts in global temperatures and weather patterns. While natural factors play a role, human activities (burning fossil fuels, deforestation) have been the main driver since the 1800s. Consequences include rising sea levels, extreme weather events, ecosystem disruption, and food security challenges."}
+      ]
+    },
+    {
+      "topic": "Mathematics",
+      "entries": [
+        {"q": "what is calculus", "a": "Calculus is the mathematical study of continuous change. Two main branches: Differential calculus (rates of change, derivatives — 'how fast is something changing?') and Integral calculus (accumulation of quantities, areas under curves). Developed by Newton and Leibniz in the 17th century. Essential for physics, engineering, economics, and machine learning."},
+        {"q": "what is statistics", "a": "Statistics is the science of collecting, analyzing, interpreting, and presenting data. Descriptive statistics (mean, median, mode, standard deviation) summarize data. Inferential statistics (hypothesis testing, confidence intervals) draw conclusions. Key to: scientific research, data science, quality control, and decision-making."}
+      ]
+    }
+  ]
+}
